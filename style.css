@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  text-align: center;
+  background: url('http://twserver.alunos.dcc.fc.up.pt:8119/assets/qbkls.png');
+}
+
+#board {
+  background-color: dodgerblue;
+  display: inline-block;
+}
+
+#noclick {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999; /* or maybe higher */
+
+    background-color: transparent;
+
+}
+
+/*#loadingCanvas {
+  width: 90px;
+  height: 90px;
+}*/
+
+.col {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  margin: 5px;
+  border-style: solid;
+  border-color: lightskyblue;
+}
+
+.option {
+  font-weight: bold;
+}
+
+.col.empty {
+  cursor: pointer;
+}
+
+.col.noclick {
+  cursor: default;
+}
+
+.next {
+  background-color: gray;
+}
+
+.col.red {
+  background-color: red;
+}
+
+.col.yellow {
+  background-color: yellow;
+}
+
+.col.over {
+  background-color: lightgray;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+span {
+  font-weight: lighter;
+  font-size: 10px;
+}
+
+#error {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+.menu {
+  position: absolute;
+  top: 30%;
+  right: 2%;
+  width: 16%;
+  height: 20%;
+}
+
+.container {
+  width: 60%;
+  margin-right: 15%;
+  margin-left: 20%;
+  position: relative;
+}
+
+.all {
+  width: 100%;
+  height: 90%;
+}
+
+.turn {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  right: 20%;
+  width: 16%;
+  height: 20%;
+}
+
+#copyright {
+  font-size: 10px;
+}
+
+.login {
+  width: 300px;
+  display: table;
+  margin: 0 auto;
+  background-color: dodgerblue;
+  padding: 25px 20px;
+}
+
+.login input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 100px;
+  background: white;
+  color: dodgerblue;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.printwinner {
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  margin: auto;
+  border-radius: 15px;
+  border: 2px solid  #1E90FF;
+  background-color: white;
+  width: 300px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #1E90FF;
+  z-index: 0;
+}
+
+
+#close1, #close2 {
+  display: inline-block;
+  padding: 2px 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#demo1 {
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  cursor: pointer;
+  background: dodgerblue;
+  color: #fff;
+}
+
+.login input[type="text"], input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+* button {
+  width: 200px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.option {
+  font-weight: lighter;
+}
+
+#difficulty, #starter {
+  background-color: white;
+  width: 200px;
+}
+
+#height, #width {
+  background-color: white;
+  width: 98px;
+}
+
+.login p {
+  color: white;
+  font-weight: bold;
+}
+
+.login h1 {
+  color: white;
+  font-weight: lighter;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin-left: 20%;
+  background-color: white;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
